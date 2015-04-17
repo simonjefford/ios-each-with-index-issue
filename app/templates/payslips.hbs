@@ -1,0 +1,8 @@
+<p>There are {{attrs.lineitems.length}} items</p>
+
+{{#with attrs.lineitems as lineitems}}
+  {{#each lineitems as |lineitem index|}}
+    <p>Name: {{lineitem.name}}, Value: {{lineitem.val}}, Index: {{index}}</p>
+    <p>content index: {{_view.contentIndex}}</p>
+  {{/each}}
+{{/with}}
